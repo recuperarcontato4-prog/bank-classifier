@@ -3,3 +3,9 @@ __pycache__/
 .ipynb_checkpoints/
 venv/
 .venv/
+.env
+*.pem
+*.key
+.DS_Store
+.idea/
+*.swp
