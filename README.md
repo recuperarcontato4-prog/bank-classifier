@@ -46,6 +46,8 @@ pip install -r requirements.txt
 jupyter notebook classificador_despesas.ipynb
 ```
 
+> **Obs:** na primeira execucao local o modelo sera baixado automaticamente (~560 MB). No Colab isso ocorre na GPU e e bem mais rapido.
+
 ## Resultados
 
 O classificador analisa 10 transacoes e retorna:
@@ -53,11 +55,12 @@ O classificador analisa 10 transacoes e retorna:
 - **2a opcao** para comparacao
 - **Indicador de ambiguidade** (quando a diferenca entre 1a e 2a categoria e < 20%)
 
-Exemplo:
+Exemplo de saida esperada (scores variam conforme versao do modelo):
 ```
-Compra no supermercado Pao de Acucar  -> Alimentacao (84.2%)
-Pagamento Uber viagem centro          -> Transporte  (91.3%)
-Conta de luz Enel Sao Paulo           -> Contas e Servicos (88.7%)
+Compra no supermercado Pao de Acucar  -> Alimentacao     (~82%)
+Pagamento Uber viagem centro          -> Transporte       (~91%)
+Conta de luz Enel Sao Paulo           -> Contas e Servicos (~88%)
+Academia Smart Fit mensalidade        -> Saude            (~68%)  <- ambigua
 ```
 
 ## Tecnologias

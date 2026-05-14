@@ -1,3 +1,5 @@
-transformers
-torch
-pandas
+# Para execucao LOCAL (no Colab esses pacotes ja estao instalados)
+transformers>=4.40.0
+torch>=2.2.0
+pandas>=2.0.0
+jupyter>=1.0.0
